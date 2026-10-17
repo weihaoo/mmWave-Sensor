@@ -39,6 +39,15 @@ i2c:
   scl: GPIO23
   scan: true
 
+# UART to the LD2450 radar: GPIO16 = D6/TX, GPIO17 = D7/RX, default baud 256000.
+uart:
+  id: uart_ld2450
+  tx_pin: GPIO16
+  rx_pin: GPIO17
+  baud_rate: 256000
+  parity: NONE
+  stop_bits: 1
+
 ld2450:
   id: ld2450_radar
   uart_id: uart_ld2450
