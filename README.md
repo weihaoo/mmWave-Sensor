@@ -76,6 +76,14 @@ Download the `FullAssembly.3mf` from the repo or the Releases tab and print the 
 
 **Very Important!** - The tightening ring MUST be printed at 0.12mm layer height or the threads will come out weird. I think everything else should be fine at 0.2mm, let me know if it isnt!
 
+## Pinout Diagram
+
+#### Option A: LD2450
+![LD2450 to XIAO ESP32-C6 wiring diagram](images/ld2450-wiring.png)
+
+#### Option B: DFRobot SEN0609
+![DFRobot SEN0609 to XIAO ESP32-C6 wiring diagram](images/sen0609-wiring.png)
+
 ## Home Assistant Dashboard
 
 If you are connecting this to Home Assistant and want the UI dashboard card shown in the video, you will need to install HACS (Home Assistant Community Store) and download the **[Zone Mapper Lovelace Card](https://github.com/ApolloAutomation/zone-mapper-card)**.
