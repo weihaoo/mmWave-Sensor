@@ -34,6 +34,29 @@ wifi:
 
 captive_portal:
 
+# ---------------------------------------------------------------------------
+#  OPTIONAL: use Thread instead of Wi-Fi (ESPHome native API over Thread).
+#  To switch:
+#    1. Comment out the wifi: and captive_portal: blocks above.
+#    2. Uncomment the network: and openthread: blocks below.
+#    3. Add the thread_* keys to secrets.yaml, then flash over USB once.
+#  Needs ESPHome 2025.6+, the ESP32-C6, and a Thread Border Router.
+#  Wi-Fi and Thread cannot both be enabled in the same build.
+# ---------------------------------------------------------------------------
+# network:
+#   enable_ipv6: true
+#
+# openthread:
+#   device_type: FTD        # FTD = mains-powered/router-eligible; MTD for battery
+#   force_dataset: true
+#   channel: !secret thread_channel
+#   network_name: !secret thread_network_name
+#   network_key: !secret thread_network_key
+#   pan_id: !secret thread_pan_id
+#   ext_pan_id: !secret thread_ext_pan_id
+#   pskc: !secret thread_pskc
+#   mesh_local_prefix: !secret thread_mesh_local_prefix
+
 i2c:
   sda: GPIO22
   scl: GPIO23
