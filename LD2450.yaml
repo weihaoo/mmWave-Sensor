@@ -1,5 +1,5 @@
 esphome:
-  name: LD2450
+  name: ld2450
   friendly_name: !secret friendly_name
 
 # Underclocking to half the normal speed for heat management
